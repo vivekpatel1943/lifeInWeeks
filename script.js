@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         let lifeExpectancy = document.getElementById('lifeExpectancy').value;
         lifeExpectancy = parseInt(lifeExpectancy);
-        let deathYear = birthday.getFullYear() + 90;
+        let deathYear = birthday.getFullYear() + lifeExpectancy;
         let deathDay = new Date(`${birthday.getDay} ${birthday.getMonth} ${deathYear}`);
         let deathTime = deathDay.getTime();
         let presentDate = new Date();
